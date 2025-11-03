@@ -1,3 +1,64 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "/"
+languageCode = "en-us"
+title = "Daniel Lowd"
+theme = "PaperMod"
+enableRobotsTXT = true
+relativeURLs = true
+canonifyURLs = false
+
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  author = "Daniel Lowd"
+  description = "Professor of Computer Science at the University of Oregon"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowToc = true
+  mainSections = ["news"]
+
+  [params.profileMode]
+    enabled = false
+
+  # homeInfoParams intentionally omitted to keep homepage content focused on hero layout
+
+[[params.socialIcons]]
+  name = "BlueSky"
+  url = "https://bsky.app/profile/lowd.bsky.social"
+[[params.socialIcons]]
+  name = "Twitter"
+  url = "https://twitter.com/dlowd"
+[[params.socialIcons]]
+  name = "Mastodon"
+  url = "https://sigmoid.social/@lowd"
+
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 10
+[[menu.main]]
+  name = "Publications"
+  url = "/publications/"
+  weight = 20
+[[menu.main]]
+  name = "Group"
+  url = "/group/"
+  weight = 30
+[[menu.main]]
+  name = "Misc"
+  url = "/misc/"
+  weight = 60
+[[menu.main]]
+  name = "Advice"
+  url = "/advice/"
+  weight = 70
