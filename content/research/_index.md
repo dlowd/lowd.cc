@@ -1,11 +1,8 @@
 ---
 title: "Research"
-description: "Adversarial machine learning, tractable probabilistic models, and statistical relational learning"
 aliases: ["research.html"]
 ShowToc: true
 ---
-
-## Focus Areas
 
 My research spans multiple facets of machine learning, united by the goal of creating reliable, trustworthy, and efficient models.
 

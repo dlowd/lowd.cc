@@ -7,12 +7,16 @@ aliases: ["group.html"]
 
 **Ph.D.**
 
-- Wencong You  
 - Daniel Olds  
 - Anika Nahian Binte Kabir  
 
+**Undergrad**
+
+- John Heibel
+
 ## Alumni
 
+- Wencong You - Ph.D. 2025
 - Jonathan Brophy — Ph.D. 2022  
 - Adib Mosharrof — M.S. 2021  
 - Austen Kelly — M.S. 2019 *(Meta)*  
