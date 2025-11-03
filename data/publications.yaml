@@ -1,0 +1,514 @@
+featured:
+  - title: "Reducing Certified Regression to Certified Classification for General Poisoning Attacks"
+    authors: "Zayd Hammoudeh and Daniel Lowd"
+    venue: "SaTML 2023"
+    year: 2023
+    summary: "Certified defenses that reduce robust regression to classification, expanding guarantees against poisoning attacks."
+    links:
+      - label: "Paper"
+        url: "/files/hammoudeh-satml23.pdf"
+  - title: "Instance-Based Uncertainty Estimation for Gradient-Boosted Regression Trees"
+    authors: "Jonathan Brophy and Daniel Lowd"
+    venue: "NeurIPS 2022"
+    year: 2022
+    summary: "Calibrated uncertainty estimates for tree ensembles using local influence of similar training examples."
+    abstract: "We propose an instance-based uncertainty estimation method for gradient-boosted trees that measures local sensitivity to similar training examples, yielding calibrated confidence without sacrificing accuracy."
+    links:
+      - label: "Paper"
+        url: "/files/brophy-neurips22.pdf"
+  - title: "Machine Unlearning for Random Forests"
+    authors: "Jonathan Brophy and Daniel Lowd"
+    venue: "ICML 2021"
+    year: 2021
+    summary: "Algorithms that efficiently remove the effect of individual samples from trained random forests."
+    abstract: "We present unlearning algorithms for tree ensembles that support sample deletion requests by updating only affected trees and nodes, preserving model quality while offering strong speedups over retraining."
+    links:
+      - label: "Paper"
+        url: "/files/brophy-icml21.pdf"
+      - label: "Supplement"
+        url: "/files/brophy-icml21-supp.pdf"
+
+
+
+
+
+sections:
+  - name: "All"
+    entries:
+      - title: "The Ultimate Cookbook for Invisible Poison: Crafting Subtle Clean-Label Text Backdoors with Style Attributes"
+        authors: "Wencong You, Daniel Lowd"
+        venue: "IEEE Conference on Secure and Trustworthy Machine Learning, SaTML 2025, Copenhagen, Denmark, April 9-11, 2025"
+        year: 2025
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1109/SaTML64287.2025.00020"
+          - label: "DOI"
+            url: "https://doi.org/10.1109/SATML64287.2025.00020"
+      - title: "On the Practicality of Differential Privacy for Knowledge Tracing"
+        authors: "Anika Kabir, Chandan Tankala, Daniel Lowd"
+        venue: "Proceedings of the 18th International Conference on Educational Data Mining, EDM 2025, Palermo, Italy, July 20-23, 2025"
+        year: 2025
+        links:
+          - label: "Publisher"
+            url: "https://educationaldatamining.org/2025.EDM.poster-demo-papers.289/index.html"
+      - title: "Training data influence analysis and estimation: a survey"
+        authors: "Zayd Hammoudeh, Daniel Lowd"
+        venue: "Mach. Learn."
+        year: 2024
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1007/s10994-023-06495-7"
+          - label: "DOI"
+            url: "https://doi.org/10.1007/S10994-023-06495-7"
+      - title: "Provable Robustness against a Union of L\_0 Adversarial Attacks"
+        authors: "Zayd Hammoudeh, Daniel Lowd"
+        venue: "Thirty-Eighth AAAI Conference on Artificial Intelligence, AAAI 2024, Thirty-Sixth Conference on Innovative Applications of Artificial Intelligence, IAAI 2024, Fourteenth Symposium on Educational Advances in Artificial Intelligence, EAAI 2014, February 20-27, 2024, Vancouver, Canada"
+        year: 2024
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1609/aaai.v38i19.30106"
+          - label: "DOI"
+            url: "https://doi.org/10.1609/AAAI.V38I19.30106"
+      - title: "MaPPing Your Model: Assessing the Impact of Adversarial Attacks on LLM-based Programming Assistants"
+        authors: "John Heibel, Daniel Lowd"
+        venue: "CoRR"
+        year: 2024
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.48550/arXiv.2407.11072"
+          - label: "DOI"
+            url: "https://doi.org/10.48550/ARXIV.2407.11072"
+      - title: "Reducing Certified Regression to Certified Classification for General Poisoning Attacks"
+        authors: "Zayd Hammoudeh, Daniel Lowd"
+        venue: "2023 IEEE Conference on Secure and Trustworthy Machine Learning, SaTML 2023, Raleigh, NC, USA, February 8-10, 2023"
+        year: 2023
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1109/SaTML54575.2023.00040"
+          - label: "DOI"
+            url: "https://doi.org/10.1109/SATML54575.2023.00040"
+      - title: "Large Language Models Are Better Adversaries: Exploring Generative Clean-Label Backdoor Attacks Against Text Classifiers"
+        authors: "Wencong You, Zayd Hammoudeh, Daniel Lowd"
+        venue: "Findings of the Association for Computational Linguistics: EMNLP 2023, Singapore, December 6-10, 2023"
+        year: 2023
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.18653/v1/2023.findings-emnlp.833"
+          - label: "DOI"
+            url: "https://doi.org/10.18653/V1/2023.FINDINGS-EMNLP.833"
+      - title: "Feature Partition Aggregation: A Fast Certified Defense Against a Union of Sparse Adversarial Attacks"
+        authors: "Zayd Hammoudeh, Daniel Lowd"
+        venue: "CoRR"
+        year: 2023
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.48550/arXiv.2302.11628"
+          - label: "DOI"
+            url: "https://doi.org/10.48550/ARXIV.2302.11628"
+      - title: "Adapting and Evaluating Influence-Estimation Methods for Gradient-Boosted Decision Trees"
+        authors: "Jonathan Brophy, Zayd Hammoudeh, Daniel Lowd"
+        venue: "J. Mach. Learn. Res."
+        year: 2023
+        links:
+          - label: "Publisher"
+            url: "https://jmlr.org/papers/v24/22-0449.html"
+      - title: "TCAB: A Large-Scale Text Classification Attack Benchmark"
+        authors: "Kalyani Asthana, Zhouhang Xie, Wencong You, Adam Noack, Jonathan Brophy, Sameer Singh, Daniel Lowd"
+        venue: "CoRR"
+        year: 2022
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.48550/arXiv.2210.12233"
+          - label: "DOI"
+            url: "https://doi.org/10.48550/ARXIV.2210.12233"
+      - title: "Reducing Certified Regression to Certified Classification"
+        authors: "Zayd Hammoudeh, Daniel Lowd"
+        venue: "CoRR"
+        year: 2022
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.48550/arXiv.2208.13904"
+          - label: "DOI"
+            url: "https://doi.org/10.48550/ARXIV.2208.13904"
+      - title: "Instance-Based Uncertainty Estimation for Gradient-Boosted Regression Trees"
+        authors: "Jonathan Brophy, Daniel Lowd"
+        venue: "Advances in Neural Information Processing Systems 35: Annual Conference on Neural Information Processing Systems 2022, NeurIPS 2022, New Orleans, LA, USA, November 28 - December 9, 2022"
+        year: 2022
+        links:
+          - label: "Publisher"
+            url: "http://papers.nips.cc/paper_files/paper/2022/hash/48088756ec0ce6ba362bddc7ebeb3915-Abstract-Conference.html"
+      - title: "Identifying Adversarial Attacks on Text Classifiers"
+        authors: "Zhouhang Xie, Jonathan Brophy, Adam Noack, Wencong You, Kalyani Asthana, Carter Perkins, Sabrina Reis, Sameer Singh, Daniel Lowd"
+        venue: "CoRR"
+        year: 2022
+        links:
+          - label: "arXiv"
+            url: "https://arxiv.org/abs/2201.08555"
+      - title: "Identifying a Training-Set Attack's Target Using Renormalized Influence Estimation"
+        authors: "Zayd Hammoudeh, Daniel Lowd"
+        venue: "Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security, CCS 2022, Los Angeles, CA, USA, November 7-11, 2022"
+        year: 2022
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1145/3548606.3559335"
+      - title: "What Models Know About Their Attackers: Deriving Attacker Information From Latent Representations"
+        authors: "Zhouhang Xie, Jonathan Brophy, Adam Noack, Wencong You, Kalyani Asthana, Carter Perkins, Sabrina Reis, Zayd Hammoudeh, Daniel Lowd, Sameer Singh"
+        venue: "Proceedings of the Fourth BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP, BlackboxNLP@EMNLP 2021, Punta Cana, Dominican Republic, November 11, 2021"
+        year: 2021
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.18653/v1/2021.blackboxnlp-1.6"
+          - label: "DOI"
+            url: "https://doi.org/10.18653/V1/2021.BLACKBOXNLP-1.6"
+      - title: "Machine Unlearning for Random Forests"
+        authors: "Jonathan Brophy, Daniel Lowd"
+        venue: "Proceedings of the 38th International Conference on Machine Learning, ICML 2021, 18-24 July 2021, Virtual Event"
+        year: 2021
+        links:
+          - label: "Publisher"
+            url: "http://proceedings.mlr.press/v139/brophy21a.html"
+      - title: "TREX: Tree-Ensemble Representer-Point Explanations"
+        authors: "Jonathan Brophy, Daniel Lowd"
+        venue: "CoRR"
+        year: 2020
+        links:
+          - label: "arXiv"
+            url: "https://arxiv.org/abs/2009.05530"
+      - title: "On the Practicality of Learning Models for Network Telemetry"
+        authors: "Soheil Jamshidi, Zayd Hammoudeh, Ramakrishnan Durairajan, Daniel Lowd, Reza Rejaie, Walter Willinger"
+        venue: "4th Network Traffic Measurement and Analysis Conference, TMA 2020, Berlin, Germany, June 10, 2020"
+        year: 2020
+        links:
+          - label: "Publisher"
+            url: "http://dl.ifip.org/db/conf/tma/tma2020/tma2020-camera-paper02.pdf"
+      - title: "Learning from Positive and Unlabeled Data with Arbitrary Positive Shift"
+        authors: "Zayd Hammoudeh, Daniel Lowd"
+        venue: "Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual"
+        year: 2020
+        links:
+          - label: "Publisher"
+            url: "https://proceedings.neurips.cc/paper/2020/hash/98b297950041a42470269d56260243a1-Abstract.html"
+      - title: "EGGS: A Flexible Approach to Relational Modeling of Social Network Spam"
+        authors: "Jonathan Brophy, Daniel Lowd"
+        venue: "CoRR"
+        year: 2020
+        links:
+          - label: "arXiv"
+            url: "https://arxiv.org/abs/2001.04909"
+      - title: "DART: Data Addition and Removal Trees"
+        authors: "Jonathan Brophy, Daniel Lowd"
+        venue: "CoRR"
+        year: 2020
+        links:
+          - label: "arXiv"
+            url: "https://arxiv.org/abs/2009.05567"
+      - title: "Unifying logical and statistical AI with Markov logic"
+        authors: "Pedro M. Domingos, Daniel Lowd"
+        venue: "Commun. ACM"
+        year: 2019
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1145/3241978"
+      - title: "On Adversarial Examples for Character-Level Neural Machine Translation"
+        authors: "Javid Ebrahimi, Daniel Lowd, Dejing Dou"
+        venue: "Proceedings of the 27th International Conference on Computational Linguistics, COLING 2018, Santa Fe, New Mexico, USA, August 20-26, 2018"
+        year: 2018
+        links:
+          - label: "Publisher"
+            url: "https://aclanthology.org/C18-1055/"
+      - title: "HotFlip: White-Box Adversarial Examples for Text Classification"
+        authors: "Javid Ebrahimi, Anyi Rao, Daniel Lowd, Dejing Dou"
+        venue: "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics, ACL 2018, Melbourne, Australia, July 15-20, 2018, Volume 2: Short Papers"
+        year: 2018
+        links:
+          - label: "Publisher"
+            url: "https://aclanthology.org/P18-2006/"
+          - label: "DOI"
+            url: "https://doi.org/10.18653/V1/P18-2006"
+      - title: "Neural-Symbolic Learning and Reasoning: A Survey and Interpretation"
+        authors: "Tarek R. Besold, Artur S. d'Avila Garcez, Sebastian Bader, Howard Bowman, Pedro M. Domingos, Pascal Hitzler, Kai-Uwe Kuhnberger, Lu'is C. Lamb, Daniel Lowd, Priscila Machado Vieira Lima, Leo de Penning, Gadi Pinkas, Hoifung Poon, Gerson Zaverucha"
+        venue: "CoRR"
+        year: 2017
+        links:
+          - label: "arXiv"
+            url: "http://arxiv.org/abs/1711.03902"
+      - title: "HotFlip: White-Box Adversarial Examples for NLP"
+        authors: "Javid Ebrahimi, Anyi Rao, Daniel Lowd, Dejing Dou"
+        venue: "CoRR"
+        year: 2017
+        links:
+          - label: "arXiv"
+            url: "http://arxiv.org/abs/1712.06751"
+      - title: "Collective Classification of Social Network Spam"
+        authors: "Jonathan Brophy, Daniel Lowd"
+        venue: "The Workshops of the The Thirty-First AAAI Conference on Artificial Intelligence, Saturday, February 4-9, 2017, San Francisco, California, USA"
+        year: 2017
+        links:
+          - label: "Publisher"
+            url: "http://aaai.org/ocs/index.php/WS/AAAIW17/paper/view/15064"
+      - title: "A Temporal Attentional Model for Rumor Stance Classification"
+        authors: "Amir Pouran Ben Veyseh, Javid Ebrahimi, Dejing Dou, Daniel Lowd"
+        venue: "Proceedings of the 2017 ACM on Conference on Information and Knowledge Management, CIKM 2017, Singapore, November 06 - 10, 2017"
+        year: 2017
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1145/3132847.3133116"
+      - title: "Weakly Supervised Tweet Stance Classification by Relational Bootstrapping"
+        authors: "Javid Ebrahimi, Dejing Dou, Daniel Lowd"
+        venue: "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing, EMNLP 2016, Austin, Texas, USA, November 1-4, 2016"
+        year: 2016
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.18653/v1/d16-1105"
+          - label: "DOI"
+            url: "https://doi.org/10.18653/V1/D16-1105"
+      - title: "Unifying Logical and Statistical AI"
+        authors: "Pedro M. Domingos, Daniel Lowd, Stanley Kok, Aniruddh Nath, Hoifung Poon, Matthew Richardson, Parag Singla"
+        venue: "Proceedings of the 31st Annual ACM/IEEE Symposium on Logic in Computer Science, LICS '16, New York, NY, USA, July 5-8, 2016"
+        year: 2016
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1145/2933575.2935321"
+      - title: "Ontology-Based Deep Restricted Boltzmann Machine"
+        authors: "Hao Wang, Dejing Dou, Daniel Lowd"
+        venue: "Database and Expert Systems Applications - 27th International Conference, DEXA 2016, Porto, Portugal, September 5-8, 2016, Proceedings, Part I"
+        year: 2016
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1007/978-3-319-44403-1_27"
+      - title: "Ontology Matching with Knowledge Rules"
+        authors: "Shangpu Jiang, Daniel Lowd, Sabin Kafle, Dejing Dou"
+        venue: "Trans. Large Scale Data Knowl. Centered Syst."
+        year: 2016
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1007/978-3-662-53455-7_4"
+      - title: "Discriminative Structure Learning of Arithmetic Circuits"
+        authors: "Amirmohammad Rooshenas, Daniel Lowd"
+        venue: "Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence, February 12-17, 2016, Phoenix, Arizona, USA"
+        year: 2016
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1609/aaai.v30i1.9963"
+          - label: "DOI"
+            url: "https://doi.org/10.1609/AAAI.V30I1.9963"
+      - title: "A Probabilistic Approach to Knowledge Translation"
+        authors: "Shangpu Jiang, Daniel Lowd, Dejing Dou"
+        venue: "Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence, February 12-17, 2016, Phoenix, Arizona, USA"
+        year: 2016
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1609/aaai.v30i1.10310"
+          - label: "DOI"
+            url: "https://doi.org/10.1609/AAAI.V30I1.10310"
+      - title: "A Joint Sentiment-Target-Stance Model for Stance Classification in Tweets"
+        authors: "Javid Ebrahimi, Dejing Dou, Daniel Lowd"
+        venue: "COLING 2016, 26th International Conference on Computational Linguistics, Proceedings of the Conference: Technical Papers, December 11-16, 2016, Osaka, Japan"
+        year: 2016
+        links:
+          - label: "Publisher"
+            url: "https://aclanthology.org/C16-1250/"
+      - title: "The Libra toolkit for probabilistic models"
+        authors: "Daniel Lowd, Amirmohammad Rooshenas"
+        venue: "J. Mach. Learn. Res."
+        year: 2015
+        links:
+          - label: "Publisher"
+            url: "https://dl.acm.org/doi/10.5555/2789272.2912077"
+          - label: "DOI"
+            url: "https://doi.org/10.5555/2789272.2912077"
+      - title: "Automated Attacks on Compression-Based Classifiers"
+        authors: "Igor Burago, Daniel Lowd"
+        venue: "Proceedings of the 8th ACM Workshop on Artificial Intelligence and Security, AISec 2015, Denver, Colorado, USA, October 16, 2015"
+        year: 2015
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1145/2808769.2808778"
+      - title: "Towards Adversarial Reasoning in Statistical Relational Domains"
+        authors: "Daniel Lowd, Brenton Lessley, Mino De Raj"
+        venue: "Statistical Relational Artificial Intelligence, Papers from the 2014 AAAI Workshop, Quebec City, Quebec, Canada, July 27, 2014"
+        year: 2014
+        links:
+          - label: "Publisher"
+            url: "http://www.aaai.org/ocs/index.php/WS/AAAIW14/paper/view/8861"
+      - title: "On Robustness and Regularization of Structural Support Vector Machines"
+        authors: "MohamadAli Torkamani, Daniel Lowd"
+        venue: "Proceedings of the 31th International Conference on Machine Learning, ICML 2014, Beijing, China, 21-26 June 2014"
+        year: 2014
+        links:
+          - label: "Publisher"
+            url: "http://proceedings.mlr.press/v32/torkamani14.html"
+      - title: "Leveraging USB to Establish Host Identity Using Commodity Devices"
+        authors: "Adam Bates, Ryan Leonard, Hannah Pruse, Daniel Lowd, Kevin R. B. Butler"
+        venue: "21st Annual Network and Distributed System Security Symposium, NDSS 2014, San Diego, California, USA, February 23-26, 2014"
+        year: 2014
+        links:
+          - label: "Publisher"
+            url: "https://www.ndss-symposium.org/ndss2014/leveraging-usb-establish-host-identity-using-commodity-devices"
+      - title: "Learning Sum-Product Networks with Direct and Indirect Variable Interactions"
+        authors: "Amirmohammad Rooshenas, Daniel Lowd"
+        venue: "Proceedings of the 31th International Conference on Machine Learning, ICML 2014, Beijing, China, 21-26 June 2014"
+        year: 2014
+        links:
+          - label: "Publisher"
+            url: "http://proceedings.mlr.press/v32/rooshenas14.html"
+      - title: "Inferring coarse views of connectivity in very large graphs"
+        authors: "Reza Motamedi, Reza Rejaie, Walter Willinger, Daniel Lowd, Roberto Gonzalez"
+        venue: "Proceedings of the second ACM conference on Online social networks, COSN 2014, Dublin, Ireland, October 1-2, 2014"
+        year: 2014
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1145/2660460.2660480"
+      - title: "Improving Markov network structure learning using decision trees"
+        authors: "Daniel Lowd, Jesse Davis"
+        venue: "J. Mach. Learn. Res."
+        year: 2014
+        links:
+          - label: "Publisher"
+            url: "https://dl.acm.org/doi/10.5555/2627435.2627451"
+          - label: "DOI"
+            url: "https://doi.org/10.5555/2627435.2627451"
+      - title: "On the hardness of evading combinations of linear classifiers"
+        authors: "David Stevens, Daniel Lowd"
+        venue: "AISec'13, Proceedings of the 2013 ACM Workshop on Artificial Intelligence and Security, Co-located with CCS 2013, Berlin, Germany, November 4, 2013"
+        year: 2013
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1145/2517312.2517318"
+      - title: "Learning Tractable Graphical Models Using Mixture of Arithmetic Circuits"
+        authors: "Amirmohammad Rooshenas, Daniel Lowd"
+        venue: "Late-Breaking Developments in the Field of Artificial Intelligence, Bellevue, Washington, USA, July 14-18, 2013"
+        year: 2013
+        links:
+          - label: "Publisher"
+            url: "http://www.aaai.org/ocs/index.php/WS/AAAIW13/paper/view/7183"
+      - title: "Learning Markov Networks With Arithmetic Circuits"
+        authors: "Daniel Lowd, Amirmohammad Rooshenas"
+        venue: "Proceedings of the Sixteenth International Conference on Artificial Intelligence and Statistics, AISTATS 2013, Scottsdale, AZ, USA, April 29 - May 1, 2013"
+        year: 2013
+        links:
+          - label: "Publisher"
+            url: "http://proceedings.mlr.press/v31/lowd13a.html"
+      - title: "Convex Adversarial Collective Classification"
+        authors: "MohamadAli Torkamani, Daniel Lowd"
+        venue: "Proceedings of the 30th International Conference on Machine Learning, ICML 2013, Atlanta, GA, USA, 16-21 June 2013"
+        year: 2013
+        links:
+          - label: "Publisher"
+            url: "http://proceedings.mlr.press/v28/torkamani13.html"
+      - title: "Using Markov Logic to Refine an Automatically Extracted Knowledge Base"
+        authors: "Shangpu Jiang, Daniel Lowd, Dejing Dou"
+        venue: "2nd International Workshop on Statistical Relational AI (StaRAI-12), held at the Uncertainty in Artificial Intelligence Conference (UAI 2012), Catalina Island, CA, USA, August 18, 2012"
+        year: 2012
+        links:
+          - label: "Publisher"
+            url: "https://starai.cs.kuleuven.be/2012/accepted/jiang.pdf"
+      - title: "Learning to Refine an Automatically Extracted Knowledge Base Using Markov Logic"
+        authors: "Shangpu Jiang, Daniel Lowd, Dejing Dou"
+        venue: "12th IEEE International Conference on Data Mining, ICDM 2012, Brussels, Belgium, December 10-13, 2012"
+        year: 2012
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1109/ICDM.2012.156"
+      - title: "Closed-Form Learning of Markov Networks from Dependency Networks"
+        authors: "Daniel Lowd"
+        venue: "Proceedings of the Twenty-Eighth Conference on Uncertainty in Artificial Intelligence, Catalina Island, CA, USA, August 14-18, 2012"
+        year: 2012
+        links:
+          - label: "Publisher"
+            url: "https://dslpitt.org/uai/displayArticleDetails.jsp?mmnu=1&#38;smnu=2&#38;article_id=2313&#38;proceeding_id=28"
+      - title: "Mean Field Inference in Dependency Networks: An Empirical Study"
+        authors: "Daniel Lowd, Arash Shamaei"
+        venue: "Proceedings of the Twenty-Fifth AAAI Conference on Artificial Intelligence, AAAI 2011, San Francisco, California, USA, August 7-11, 2011"
+        year: 2011
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1609/aaai.v25i1.7936"
+          - label: "DOI"
+            url: "https://doi.org/10.1609/AAAI.V25I1.7936"
+      - title: "Learning Markov Network Structure with Decision Trees"
+        authors: "Daniel Lowd, Jesse Davis"
+        venue: "ICDM 2010, The 10th IEEE International Conference on Data Mining, Sydney, Australia, 14-17 December 2010"
+        year: 2010
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1109/ICDM.2010.128"
+      - title: "Exploiting Causal Independence in Markov Logic Networks: Combining Undirected and Directed Models"
+        authors: "Sriraam Natarajan, Tushar Khot, Daniel Lowd, Prasad Tadepalli, Kristian Kersting, Jude W. Shavlik"
+        venue: "Statistical Relational Artificial Intelligence, Papers from the 2010 AAAI Workshop, Atlanta, Georgia, USA, July 12, 2010"
+        year: 2010
+        links:
+          - label: "Publisher"
+            url: "http://aaai.org/ocs/index.php/WS/AAAIW10/paper/view/2020"
+      - title: "Approximate Inference by Compilation to Arithmetic Circuits"
+        authors: "Daniel Lowd, Pedro M. Domingos"
+        venue: "NeurIPS 2010, Advances in Neural Information Processing Systems 23: 24th Annual Conference on Neural Information Processing Systems 2010. 6-9 December 2010, Vancouver, British Columbia, Canada"
+        year: 2010
+        links:
+          - label: "Publisher"
+            url: "https://proceedings.neurips.cc/paper/2010/hash/addfa9b7e234254d26e9c7f2af1005cb-Abstract.html"
+      - title: "Using salience to segment desktop activity into projects"
+        authors: "Daniel Lowd, Nicholas Kushmerick"
+        venue: "Proceedings of the 14th International Conference on Intelligent User Interfaces, IUI 2009, Sanibel Island, Florida, USA, February 8-11, 2009"
+        year: 2009
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1145/1502650.1502719"
+      - title: "Markov Logic: A Unifying Language for Structural and Statistical Pattern Recognition"
+        authors: "Pedro M. Domingos, Stanley Kok, Daniel Lowd, Hoifung Poon, Matthew Richardson, Parag Singla, Marc Sumner, Jue Wang"
+        venue: "Structural, Syntactic, and Statistical Pattern Recognition, Joint IAPR International Workshop, SSPR & SPR 2008, Orlando, USA, December 4-6, 2008. Proceedings"
+        year: 2008
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1007/978-3-540-89689-0_3"
+      - title: "Learning Arithmetic Circuits"
+        authors: "Daniel Lowd, Pedro M. Domingos"
+        venue: "UAI 2008, Proceedings of the 24th Conference in Uncertainty in Artificial Intelligence, Helsinki, Finland, July 9-12, 2008"
+        year: 2008
+        links:
+          - label: "Publisher"
+            url: "https://dslpitt.org/uai/displayArticleDetails.jsp?mmnu=1&#38;smnu=2&#38;article_id=1961&#38;proceeding_id=24"
+          - label: "arXiv"
+            url: "http://arxiv.org/abs/1206.3271"
+      - title: "Just Add Weights: Markov Logic for the Semantic Web"
+        authors: "Pedro M. Domingos, Daniel Lowd, Stanley Kok, Hoifung Poon, Matthew Richardson, Parag Singla"
+        venue: "Uncertainty Reasoning for the Semantic Web I, ISWC International Workshops, URSW 2005-2007, Revised Selected and Invited Papers"
+        year: 2008
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1007/978-3-540-89765-1_1"
+      - title: "Recursive Random Fields"
+        authors: "Daniel Lowd, Pedro M. Domingos"
+        venue: "IJCAI 2007, Proceedings of the 20th International Joint Conference on Artificial Intelligence, Hyderabad, India, January 6-12, 2007"
+        year: 2007
+        links:
+          - label: "Publisher"
+            url: "http://ijcai.org/Proceedings/07/Papers/153.pdf"
+      - title: "Efficient Weight Learning for Markov Logic Networks"
+        authors: "Daniel Lowd, Pedro M. Domingos"
+        venue: "Knowledge Discovery in Databases: PKDD 2007, 11th European Conference on Principles and Practice of Knowledge Discovery in Databases, Warsaw, Poland, September 17-21, 2007, Proceedings"
+        year: 2007
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1007/978-3-540-74976-9_21"
+      - title: "Naive Bayes models for probability estimation"
+        authors: "Daniel Lowd, Pedro M. Domingos"
+        venue: "Machine Learning, Proceedings of the Twenty-Second International Conference (ICML 2005), Bonn, Germany, August 7-11, 2005"
+        year: 2005
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1145/1102351.1102418"
+      - title: "Good Word Attacks on Statistical Spam Filters"
+        authors: "Daniel Lowd, Christopher Meek"
+        venue: "CEAS 2005 - Second Conference on Email and Anti-Spam, July 21-22, 2005, Stanford University, California, USA"
+        year: 2005
+        links:
+          - label: "Publisher"
+            url: "http://www.ceas.cc/papers-2005/125.pdf"
+      - title: "Adversarial learning"
+        authors: "Daniel Lowd, Christopher Meek"
+        venue: "Proceedings of the Eleventh ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Chicago, Illinois, USA, August 21-24, 2005"
+        year: 2005
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1145/1081870.1081950"
