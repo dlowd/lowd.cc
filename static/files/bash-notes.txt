@@ -1,0 +1,56 @@
+UNIX for Poets is well-written and has lots of examples.  However, it's
+focused on natural language processing in particular, and it's a little
+dated.  For instance, some of the commands might have different options
+than in the article.  It also leaves out some very useful things such as
+bash scripting.  Here's an example:
+
+for i in *.xmod; do
+echo $i `grep -c "<Leaf>" $i`
+done
+
+If you have the list of filenames in a file, you can also do things like this:
+
+for i in `cat files.txt`; do
+echo $i `grep -c "<Leaf>" $i`
+done
+
+And if you have a set of experiments to run, I find it very handy to
+write things like this:
+
+for dataset in genetics bibtex medical; do
+for parameter1 in 0.01 0.1 1 10 100; do
+for parameter2 in 0.1 0.2 0.3 0.4 0.5; do
+run_learning_program -p1 $parameter1 -p2 $parameter2 ${dataset}.data >
+${dataset}-${parameter1}-${parameter2}.log
+done
+done
+done
+
+Then you can analyze all the results similarly, with something like this:
+
+for dataset in genetics bibtex medical; do
+for parameter1 in 0.01 0.1 1 10 100; do
+for parameter2 in 0.1 0.2 0.3 0.4 0.5; do
+echo $dataset $parameter1 $parameter2 `grep "Final results"
+${dataset}-${parameter1}-${parameter2}.log | awk '{print $3}'`
+done
+done
+done
+
+The braces around the variable names clarify that the - and .log
+aren't part of the variable name.  Here, they're actually unnecessary,
+because punctuation usually delimits variable names.  The "awk"
+command is introduced and explained in the UNIX for Poets PDF file.
+
+Running lots of experiments like this will, of course, make more sense
+once I find some better computational resources for you. (-:
+
+Bash also lets you set variables and reuse them in general, e.g.:
+
+expdir=/homes/users/lowd/research/projects/2009/summer/august/my-project/experiments/new
+run_test -i ${expdir}/foo.data -o ${expdir}/foo.model > ${expdir}/foo.log
+
+However, variables that you set are local to the current terminal and
+expire when closed.  (Note: Only use a dollar sign ($) when asking for
+the value of a variable, not when initially assigning it, or you'll
+get errors.)

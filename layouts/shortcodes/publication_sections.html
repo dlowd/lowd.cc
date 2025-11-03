@@ -1,0 +1,128 @@
+{{- $data := site.Data.publications -}}
+{{- if and $data $data.sections -}}
+  {{- $all := slice -}}
+  {{- range $section := $data.sections -}}
+    {{- range $entry := $section.entries -}}
+      {{- $all = $all | append $entry -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $sorted := sort $all "year" "desc" -}}
+  <ul class="publication-list compact">
+    {{- $.Scratch.Set "prevYear" "" -}}
+    {{- range $entry := $sorted }}
+    {{- $year := (printf "%v" $entry.year) -}}
+    {{- if ne $year ($.Scratch.Get "prevYear") -}}
+      <li class="pub-year-sep"><span>{{ $year }}</span></li>
+      {{- $.Scratch.Set "prevYear" $year -}}
+    {{- end -}}
+    <li>
+      {{- /* Compute primary PDF-like link for the title */ -}}
+      {{- $primary := "" -}}
+      {{- $primaryLabel := "PDF" -}}
+      {{- $arxivAbs := "" -}}
+      {{- with $entry.links -}}
+        {{- range . -}}
+          {{- $u := or .url "" -}}
+          {{- if and (hasSuffix (lower $u) ".pdf") (eq $primary "") -}}
+            {{- $primary = $u -}}
+          {{- end -}}
+          {{- if and (eq (lower (urls.Parse $u).Host) "arxiv.org") (in $u "/abs/") -}}
+            {{- $arxivAbs = $u -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if eq $primary "" -}}
+        {{- $norm := lower (replaceRE "[^A-Za-z0-9]+" "" $entry.title) -}}
+        {{- $mp := index site.Data "pdf_map" -}}
+        {{- if $mp -}}
+          {{- $cand := index $mp $norm -}}
+          {{- if $cand -}}
+            {{- $primary = $cand -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if and (eq $primary "") (ne $arxivAbs "") -}}
+        {{- $primary = (replace $arxivAbs "/abs/" "/pdf/") -}}
+        {{- if not (hasSuffix (lower $primary) ".pdf") -}}
+          {{- $primary = (print $primary ".pdf") -}}
+        {{- end -}}
+      {{- end -}}
+      <span class="pub-line">
+        {{- if $primary -}}
+          <a class="pub-title" href="{{ $primary }}">{{ $entry.title }}</a>.
+        {{- else -}}
+          <span class="pub-title">{{ $entry.title }}</span>.
+        {{- end -}}
+        {{- with $entry.authors }} <span class="pub-authors">{{ . }}</span>.{{ end -}}
+        {{- if or $entry.venue $entry.year -}}
+          {{- $venue := $entry.venue | default "" -}}
+          {{- $vupper := upper $venue -}}
+          {{- $.Scratch.Set "vs" $venue -}}
+          {{- if in $vupper "SATML" -}}{{ $.Scratch.Set "vs" "SaTML" }}
+          {{- else if in $vupper "NEURIPS" -}}{{ $.Scratch.Set "vs" "NeurIPS" }}
+          {{- else if in $vupper "NIPS" -}}{{ $.Scratch.Set "vs" "NeurIPS" }}
+          {{- else if in $vupper "ICML" -}}{{ $.Scratch.Set "vs" "ICML" }}
+          {{- else if in $vupper "AAAI" -}}{{ $.Scratch.Set "vs" "AAAI" }}
+          {{- else if in $vupper "ICDM" -}}{{ $.Scratch.Set "vs" "ICDM" }}
+          {{- else if in $vupper "AISTATS" -}}{{ $.Scratch.Set "vs" "AISTATS" }}
+          {{- else if and (in $vupper "FINDINGS") (in $vupper "EMNLP") -}}{{ $.Scratch.Set "vs" "EMNLP Findings" }}
+          {{- else if in $vupper "EMNLP" -}}{{ $.Scratch.Set "vs" "EMNLP" }}
+          {{- else if in $vupper "ACL" -}}{{ $.Scratch.Set "vs" "ACL" }}
+          {{- else if in $vupper "COLING" -}}{{ $.Scratch.Set "vs" "COLING" }}
+          {{- else if in $vupper "CIKM" -}}{{ $.Scratch.Set "vs" "CIKM" }}
+          {{- else if in $vupper "DEXA" -}}{{ $.Scratch.Set "vs" "DEXA" }}
+          {{- else if in $vupper "COSN" -}}{{ $.Scratch.Set "vs" "COSN" }}
+          {{- else if in $vupper "CCS" -}}{{ $.Scratch.Set "vs" "CCS" }}
+          {{- else if in $vupper "NDSS" -}}{{ $.Scratch.Set "vs" "NDSS" }}
+          {{- else if in $vupper "UAI" -}}{{ $.Scratch.Set "vs" "UAI" }}
+          {{- else if in $vupper "IJCAI" -}}{{ $.Scratch.Set "vs" "IJCAI" }}
+          {{- else if in $vupper "ECML" -}}{{ $.Scratch.Set "vs" "ECML PKDD" }}
+          {{- else if in $vupper "PKDD" -}}{{ $.Scratch.Set "vs" "ECML PKDD" }}
+          {{- else if in $vupper "IUI" -}}{{ $.Scratch.Set "vs" "IUI" }}
+          {{- else if in $vupper "LICS" -}}{{ $.Scratch.Set "vs" "LICS" }}
+          {{- else if in $vupper "TMA" -}}{{ $.Scratch.Set "vs" "TMA" }}
+          {{- else if in $venue "J. Mach. Learn. Res." -}}{{ $.Scratch.Set "vs" "JMLR" }}
+          {{- else if in $venue "Commun. ACM" -}}{{ $.Scratch.Set "vs" "CACM" }}
+          {{- else if in $venue "Mach. Learn." -}}{{ $.Scratch.Set "vs" "Machine Learning" }}
+          {{- else -}}
+            {{- $.Scratch.Set "vs" (replace $venue "Proceedings of the " "") -}}
+          {{- end -}}
+          {{- $vs := $.Scratch.Get "vs" -}}
+          {{- $vs := $.Scratch.Get "vs" -}}
+          {{- $y := (printf "%v" $entry.year) -}}
+          {{- $appendYear := true -}}
+          {{- if and $vs (in $vs $y) -}}{{ $appendYear = false }}{{- end -}}
+          <span class="pub-venue"> {{ $vs }}{{ if $appendYear }} {{ $entry.year }}{{ end }}</span>
+        {{- end -}}
+        <span class="pub-links-inline">
+          {{- $.Scratch.Set "seen" (dict) -}}
+          {{- $.Scratch.Set "first" true -}}
+          {{- if $primary -}}
+            {{- $pl := (lower $primary) -}}
+            <a href="{{ $primary }}">PDF</a>
+            {{- $.Scratch.SetInMap "seen" $pl true -}}
+            {{- $.Scratch.Set "first" false -}}
+          {{- end -}}
+          {{- with $entry.links -}}
+            {{- range . -}}
+              {{- $u := (lower (or .url "")) -}}
+              {{- $seen := $.Scratch.Get "seen" -}}
+              {{- if and .url (not (isset $seen $u)) -}}
+                {{- if not ($.Scratch.Get "first") -}} · {{- end -}}
+                <a href="{{ .url }}">{{ .label | default "Link" }}</a>
+                {{- $.Scratch.SetInMap "seen" $u true -}}
+                {{- $.Scratch.Set "first" false -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        </span>
+      </span>
+      {{- with $entry.abstract }}
+      <details class="pub-abs"><summary>Abstract</summary><div class="pub-abs-body">{{ . }}</div></details>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+{{- else -}}
+  <p>Publication data not available yet.</p>
+{{- end -}}

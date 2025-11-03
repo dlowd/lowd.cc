@@ -1,0 +1,22 @@
+{{- $limit := 3 -}}
+{{- with .Get 0 -}}
+  {{- $limit = int . -}}
+{{- end -}}
+{{- $data := site.Data.news -}}
+{{- if and $data $data.featured -}}
+<ul class="recent-list">
+  {{- range first $limit $data.featured }}
+  {{- $primary := "" -}}
+  {{- with index .links 0 -}}
+    {{- $primary = .url -}}
+  {{- end -}}
+  <li class="recent-item">
+    <time datetime="{{ .date }}">{{ (time .date).Format "Jan 2, 2006" }}</time><br>
+    {{- if $primary }}<a href="{{ $primary }}">{{ .title }}</a>{{ else }}<span>{{ .title }}</span>{{ end }}<br>
+    {{- if .summary }}<span class="recent-summary">{{ .summary }}</span>{{ end }}
+  </li>
+  {{- end }}
+</ul>
+{{- else -}}
+<p>No recent news yet.</p>
+{{- end -}}

@@ -1,0 +1,52 @@
+body{
+    margin 0 auto;
+    padding: 0;
+    background-color: #78D;
+    font: Arial, Sans-Serif;
+    font-size: 13pt;
+    color: #000;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+h4{
+        margin-top: 1.5em;
+        margin-bottom: -0.5em;
+}
+
+#container{
+    position: relative;
+    width: 85%;
+    background: #FFF;
+    padding: 16px;
+    margin-left: 5%;
+    margin-top: 2em;
+}
+
+#navbar{
+    #margin-left: 3em;
+    #margin-right: 3em;
+    font-size: 14pt;
+    background-color: #99B;
+    color: #FFF;
+}
+#navbar a:link {text-decoration: none; color: #FFF;}
+#navbar a:active {text-decoration: none; color: #FFF;}
+#navbar a:visited {text-decoration: none; color: #FFF;}
+#navbar a:hover {
+    text-decoration: none;
+    background-color: #88F;
+    color: #FFF;
+}
+
+#contact {
+    padding: 16px;
+}
+
+img.pic {
+    margin: 8px;
+    outline-style: groove;
+    outline-color:green;
+}

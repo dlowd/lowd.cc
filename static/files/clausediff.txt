@@ -1,0 +1,74 @@
+Index: logic/clause.h
+===================================================================
+RCS file: /projects/dm/3/koks/cvs/alchemy/src/logic/clause.h,v
+retrieving revision 1.29
+diff -c -2 -r1.29 clause.h
+*** logic/clause.h	13 May 2008 21:18:24 -0000	1.29
+--- logic/clause.h	2 Jan 2009 06:50:45 -0000
+***************
+*** 122,131 ****
+    Clause() 
+      : wt_(0), predicates_(new Array<Predicate*>), intArrRep_(NULL),
+!       hashCode_(0), dirty_(true), isHardClause_(false),
+        varIdToVarsGroundedType_(NULL), auxClauseData_(NULL) {}
+  
+    Clause(const double& wt) 
+      : wt_(wt), predicates_(new Array<Predicate*>), intArrRep_(NULL),
+!       hashCode_(0), dirty_(true), isHardClause_(false),
+        varIdToVarsGroundedType_(NULL), auxClauseData_(NULL) {}
+  
+--- 122,131 ----
+    Clause() 
+      : wt_(0), predicates_(new Array<Predicate*>), intArrRep_(NULL),
+!       hashCode_(0), dirty_(true), isHardClause_(false), locked_(false),
+        varIdToVarsGroundedType_(NULL), auxClauseData_(NULL) {}
+  
+    Clause(const double& wt) 
+      : wt_(wt), predicates_(new Array<Predicate*>), intArrRep_(NULL),
+!       hashCode_(0), dirty_(true), isHardClause_(false), locked_(false),
+        varIdToVarsGroundedType_(NULL), auxClauseData_(NULL) {}
+  
+***************
+*** 134,137 ****
+--- 134,138 ----
+    {
+      wt_ = c.wt_;
++     locked_ = c.locked_;
+      predicates_ = new Array<Predicate*>;
+      Array<Predicate*>* cpredicates = c.predicates_;
+***************
+*** 277,282 ****
+  
+      // not setting dirty bit because it does not affect the clause
+!   void setWt(const double& wt) { wt_ = wt; }  
+!   void addWt(const double& wt) { wt_ += wt;  }
+   
+    void setDirty() { dirty_ = true; }
+--- 278,283 ----
+  
+      // not setting dirty bit because it does not affect the clause
+!   void setWt(const double& wt) { if (!locked_) wt_ = wt; }  
+!   void addWt(const double& wt) { if (!locked_) wt_ += wt; }
+   
+    void setDirty() { dirty_ = true; }
+***************
+*** 329,332 ****
+--- 330,339 ----
+    void setIsHardClause(const bool& b) { isHardClause_ = b; }
+  
++   bool isLocked() const { return locked_; }
++   void lock()   { locked_ = true; }
++   void unlock() { locked_ = false; }
++ 
++   
++ 
+  
+      // p is stored in MLN and the caller of this function should not delete it.
+***************
+*** 2911,2914 ****
+--- 2918,2922 ----
+    bool dirty_;
+    bool isHardClause_;
++   bool locked_;
+  
+      // (*varIdToVarsGroundedType_)[v] is the VarsGroundType of variable -v

@@ -1,0 +1,28 @@
+To His Uncompleted Theory Homework
+
+Had I but brains enough, and time,
+This problem set would be just fine.
+I would sit down and count each way
+To prove the truth of theorem A.
+And when I came to theorem B,
+I could proceed exhaustively
+When n is 1, then 2, 3, 4...
+(To just induct would be a bore.)
+Theorem C obviously comes
+Straight from Peano's axioms.
+See Whitehead for an intro text:
+My answer set would be the next.
+An omnibus of copious length,
+Rigorous method, perfect strength.
+Such worthy questions, bold and clear,
+Deserve ten thousand pages here.
+
+But even now, I start to feel
+The need for sleep, to rest, to heal.
+And in this finite life we find
+Too little time, too little mind.
+So write this on my epitaph:
+``Had he but time enough for math...''
+
+(Inspired by "To His Coy Mistress," by Andrew Marvell, one of the most famous
+come-ons ever written.)

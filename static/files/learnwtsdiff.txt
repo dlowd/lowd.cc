@@ -1,0 +1,33 @@
+Index: learnwts/learnwts.cpp
+===================================================================
+RCS file: /projects/dm/3/koks/cvs/alchemy/src/learnwts/learnwts.cpp,v
+retrieving revision 1.49
+diff -c -2 -r1.49 learnwts.cpp
+*** learnwts/learnwts.cpp	9 Oct 2008 20:19:05 -0000	1.49
+--- learnwts/learnwts.cpp	2 Jan 2009 06:56:14 -0000
+***************
+*** 845,852 ****
+  
+          // Need to set some dummy weight
+!       for (int j = 0; j < mln->getNumClauses(); j++)
+!         ((Clause*) mln->getClause(j))->setWt(1);
+  
+! 		// Make open-world evidence preds into non-evidence
+        if (!allPredsExceptQueriesAreCW)
+        {
+--- 864,878 ----
+  
+          // Need to set some dummy weight
+!       for (int j = 0; j < mln->getNumClauses(); j++) 
+!       {
+! 		  Clause* c = (Clause*) mln->getClause(j);
+!           // If the weight was set to non-zero in the source MLN,
+!           // don't modify it while learning. [DBL]
+!           if (c->getWt() != 0)
+!               c->lock();
+!           c->setWt(0.001);
+!       }
+  
+! 	  // Make open-world evidence preds into non-evidence
+        if (!allPredsExceptQueriesAreCW)
+        {

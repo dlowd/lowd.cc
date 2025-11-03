@@ -1,0 +1,21 @@
+
+Using the command line:
+  https://medium.com/@kadek/command-line-tricks-for-data-scientists-c98e0abe5da
+  http://www.cs.upc.edu/~padro/Unixforpoets.pdf
+
+Neither of those talk about variables or loops, which I find to be very useful... so I started to look for other resources, and ended up lost in a sea of blog posts and articles with overlapping content. The following seemed most useful:
+
+There are six tutorials on bash here. I've linked to the last one, since it has pointers to the first five:
+  https://data36.com/command-line-data-awk-sed-join-date/
+
+This is a short book that's more thorough and filled with examples:
+  https://www.datascienceatthecommandline.com
+
+Andrew Ng's advice on debugging machine learning algorithms:
+  https://www.youtube.com/watch?v=sQ8T9b-uGVE&list=PLA89DCFA6ADACE599&t=0s&index=11
+
+Slides here: http://cs229.stanford.edu/materials/ML-advice.pdf
+
+Accessible intro courses on deep learning tools and methods:
+  http://www.fast.ai
+

@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=iso-8859-1">
+<title>Daniel Lowd</title>
+<link rel="stylesheet" href="daniel.css" type="text/css">
+</head>
+<!-- <body bgcolor="#CCB0FF"> -->
+<body>
+
+<div id="container">
+<hr>
+<H1>Daniel Lowd</H1>
+<hr>
+<div id="navbar">
+<table align="center" width="84%">
+<tr>
+<td width="12%" align="center"><a href="index.html">Home</a></td>
+<td width="12%" align="center"><a href="research.html">Research</a></td>
+<td width="12%" align="center"><a href="publications.html">Publications</a></td>
+<td width="12%" align="center"><a href="group.html">Group</a></td>
+<td width="12%" align="center"><a href="teaching.html">Teaching</a></td>
+<td width="12%" align="center"><a href="misc.html">Misc</a></td>
+<td width="12%" align="center"><a href="lowd-cv-oct2023.pdf">Vitae (pdf)</a></td>
+</tr>
+</table>
+</div>
+
+
+<table id="contact">
+<tr>
+<td width=220> <img src="daniel-apr2014-smaller.jpg" alt="Portrait of Daniel Lowd"> </td>
+<!-- D_and_E_at_computer.jpg" /> -->
+<td>
+<!-- <h2>Contact Info</h2> -->
+<p>
+<b>E-mail:</b> lowd at uoregon dot edu <br>
+<b>Office:</b> 262 Deschutes Hall <br>
+<b>Phone:</b> 541-346-4154 <br>
+<b>Fax:</b> 541-346-5373 <br>
+
+<p>
+<b>Mailing Address:</b><br>
+Department of Computer and Information Science<br>
+University of Oregon, Eugene, OR 97403 
+</td>
+</tr>
+</table>
+
+<p>
+I am an Associate Professor in the
+<a href="http://www.cs.uoregon.edu/">
+Department of Computer and Information Science</a> at the <a
+href="http://www.uoregon.edu/"> University of Oregon</a>.
+
+<p>
+My research interests include learning and inference with
+probabilistic graphical models, adversarial machine learning, and
+statistical relational machine learning. 
+
+<!--
+<p> I also maintain <a href="http://libra.cs.uoregon.edu">Libra</a>, an
+open-source toolkit for <b>L</b>earning and <b>I</b>nference in
+<b>B</b>ayesian networks, <b>R</b>andom fields, and <b>A</b>rithmetic
+circuits.<br>  Latest version: 1.1.1, released on 3/28/2015.
+-->
+
+<p>You can also find me on <a href="https://bsky.app/profile/lowd.bsky.social">BlueSky (@lowd.bsky.social)</a>, <a href="https://twitter.com/dlowd">Twitter (@dlowd)</a> and <a rel="me" href="https://sigmoid.social/@lowd">Mastodon (@lowd@sigmoid.social)</a>.
+
+<h2>PROSPECTIVE STUDENTS</h2>
+
+Interested in doing machine learning research at the University of Oregon?
+Please check out the <a href="prospective.html">FAQ</a> for more
+information, then email me if you still have questions.
+
+
+<h2>NEWS</h2>
+
+<h4>February 2023</h4>
+<p>SaTML 2023 paper (with Zayd Hammoudeh) on robust regression:
+<a href="hammoudeh-satml23.pdf">Reducing Certified Regression to Certified Classification for General Poisoning Attacks</a>. 
+
+<p>JMLR paper (with Jonathan Brophy and Zayd Hammoudeh) on influence estimation for tree ensembles:
+<a href="brophy-jmlr23.pdf">Adapting and Evaluating Influence-Estimation Methods for Gradient-Boosted Decision Trees</a>. 
+
+<h4>November 2020</h4>
+<p>NeurIPS 2022 paper (with Jonathan Brophy) on estimating probabilities using tree ensembles:
+<a href="brophy-neurips22.pdf">Instance-Based Uncertainty Estimation for Gradient-Boosted Regression Trees</a>. 
+
+<h4>November 2020</h4>
+<p>CCS 2022 paper (with Zayd Hammoudeh) on defending against training set attacks:
+<a href="hammoudeh-ccs22.pdf">Identifying a Training-Set Attack’s Target Using Renormalized Influence Estimationa</a>.
+
+<h4>November 2020</h4>
+<p>ICML 2021 paper (with Jonathan Brophy) on data removal for random forests:
+<a href="brophy-icml21.pdf">Machine unlearning for random forests</a>.
+
+<h4>November 2020</h4>
+<p>NeurIPS 2020 paper (with Zayd Hammoudeh) on positive-unlabeled learning:
+<a href="hammoudeh-neurips20.pdf">Learning from Positive and Unlabeled Data with Arbitrary Positive Shift</a>. 
+Code: <a href="https://github.com/ZaydH/arbitrary_pu">https://github.com/ZaydH/arbitrary_pu</a>
+
+<h4>July 2019</h4>
+<p>New CACM paper on Markov logic:
+<a href="cacm19domingos.pdf">Unifying Logical and Statistical AI with
+                Markov Logic</a>.
+
+<h4>April 2019</h4>
+<p>I spoke at the <a href="http://www.sistersscienceclub.org">Sisters
+Science Club</a> in Sisters, Oregon on the topic "Can Artificial
+Intelligence Fight Alternative Facts?" (<a
+href="fake-news-ai-sisters-apr2019.pptx">Slides</a>)
+
+<h4>March 2019</h4>
+<p>I'm co-organizing the <a
+href="https://sites.google.com/view/icmltpm2019/home">3rd Workshop on
+Tractable Probabilistic Modeling</a>, co-located with ICML 2019.
+
+<h4>January 2019</h4>
+<p>I gave a <a
+href="https://around.uoregon.edu/content/computer-science-prof-discuss-dangers-and-potential-ai">QuackChat
+pub talk</a> titled, "When Can We Trust Artificial Intelligence?"
+(<a href="quackchat-trust-ai-jan2019.pptx">Slides</a>)
+
+<h4>July 2018</h4>
+<p>Our work on <a
+href="https://www.theregister.co.uk/2018/06/28/machine_translation_vulnerable/">adversarial
+examples for machine translation</a> was featured in an article in <a
+href="https://www.theregister.co.uk">The Register</a>.
+
+<h4>June 2018</h4>
+<p>Our new COLING 2018 paper was selected as an Area Chair Favorite: 
+<a href="coling18ebrahimi.pdf">On Adversarial Examples for Character-Level Neural Machine Translation</a>
+(with Javid Ebrahimi and and Dejing Dou). 
+(<a href="https://github.com/jebivid/adversarial-nmt">Source code</a>)
+
+<p><b>In the news:</b> I wrote an general audience article for <a
+href="http://theconversation.com">The Conversation</a> -- "<a
+href="https://theconversation.com/can-facebook-use-ai-to-fight-online-abuse-95203">Can 
+Facebook use AI to fight online abuse?</a>". It's been reprinted by 
+<a
+href="https://www.scientificamerican.com/article/can-facebook-use-ai-to-fight-online-abuse/">Scientific
+American</a>, <a
+href="https://www.salon.com/2018/06/17/can-facebook-use-ai-to-fight-online-abuse_partner/">Salon</a>,
+<a
+href="https://www.seattlepi.com/news/article/Can-Facebook-use-AI-to-fight-online-abuse-12986740.php">The
+Seattle P.I.</a>, and many other outlets!
+
+<h4>May 2018</h4>
+<p>I am co-organizing the <a
+href="https://sites.google.com/site/tpm2018ws">ICML/IJCAI 2018 Workshop on
+Tractable Probabilistic Models</a> <b>(Deadline: May 18th, 2018)</b>
+
+<p>New paper accepted to ACL 2018: <a href="acl18ebrahimi.pdf">HotFlip:
+White-Box Adversarial Examples for Text Classification</a> (with Javid
+Ebrahimi, Anyi Rao, and Dejing Dou).
+
+<h4>May 2017</h4>
+<p>I was awarded tenure! I'm now an Associate Professor (effective September 2017).
+
+<h4>April 2017</h4>
+<p>I was interviewed for a BBC article on adversarial machine learning,
+<a href="http://www.bbc.com/future/story/20170410-how-to-fool-artificial-intelligence?ocid=global_future_rss">"How to Fool Artificial Intelligence"</a>.
+
+<h4>March 2017</h4>
+<p>
+<a href="http://ix.cs.uoregon.edu/~pedram/">Pedram Rooshenas</a>
+successfully defended his dissertation and completed his Ph.D.
+Congratulations, Dr. Rooshenas!
+
+
+<h4>February 2017</h4>
+<p>Our work on <a href="aics17brophy.pdf">Collective Classification of
+        Social Network Spam</a> (with Jonathan Brophy) has been published
+in the <a href="http://www-personal.umich.edu/~arunesh/AICS2017/">
+        2017 AAAI Workshop on Artificial Intelligence and Cyber-Security (AICS)</a>.
+
+
+<h4>October-December 2016</h4>
+
+<p>Two new publications on stance classification in tweets (with Javid
+Ebrahimi and Dejing Dou): <a href="emnlp16ebrahimi.pdf">Weakly Supervised
+        Tweet Stance Classification by Relational Bootstrapping</a>
+                             (COLING'16) and <a
+        href="coling16ebrahimi.pdf"> A Joint Sentiment-Target-Stance Model
+        for Stance Classification in Tweets </a> (EMNLP'16).
+
+<!-- ??? DEXA'16 paper with Hao? -->
+
+<h4>July 2016</h4> 
+<p>
+<a href="http://ix.cs.uoregon.edu/~ali/">Ali Torkamani</a>
+successfully defended his dissertation and completed his Ph.D.
+Congratulations, Dr. Torkamani!
+
+<p>I gave an invited talk on &quot;Adversarial 
+Statistical Relational AI&quot; at the 
+<a href="http://www.starai.org/2016/">IJCAI 2016 Workshop on
+Statistical Relational AI (StarAI)</a>.  
+<a href="adversarial-starai-lowd2016.pdf">(Slides)</a></p>
+
+<h4>June 2016</h4> 
+<p>We've received funding from the <a href="http://www.darpa.mil/program/media-forensics">DARPA Media
+Forensics (MediFor)</a> program!  Over the next 4 years, we will develop
+Markov logic networks and algorithms to reason about fraudulent images and
+videos.  (Joint team with SRI Princeton and NYU.)
+
+<h4>May 2016</h4> 
+<p>Our paper <a href="aistats16rooshenas.pdf">Discriminative Structure Learning of Arithmetic Circuits</a>
+was published in the <a href="http://www.aistats.org">19th International
+Conference on Artificial Intelligence and Statistics
+(AISTATS)</a> (with Pedram Rooshenas).</p>
+
+<h4>February 2016</h4> 
+<p>Our paper <a href="aaai16jiang.pdf">A Probabilistic Approach to Knowledge Translation</a> (with
+Shangpu Jiang and Dejing Dou) was published in <a href="http://www.aaai.org/Conferences/AAAI/aaai16.php">AAAI 2016</a></p>
+
+<h4>January 2016</h4> 
+<p> <a href="http://jmlr.org/papers/v16/lowd15a.html">The Libra 
+        Toolkit for Probabilistic Models</a> has been published in the JMLR
+Open Source Software track! (with Pedram Rooshenas)</p>
+
+<center><p><b><a href="news.html">...More News...</a></b></p></center>
+
+</div>
+</body>
+</html>

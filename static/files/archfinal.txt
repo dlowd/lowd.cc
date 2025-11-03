@@ -1,0 +1,34 @@
+5. Write your own question and answer it.  You will be graded on the
+complexity and depth of your answer and the question.
+
+Answer:
+
+Why is prefetching important?  Please answer in the form of a sonnet
+(Shakespearean, Petrarchan, or Spenserian).  You will be graded on form,
+style, and metaphor, as well as technical accuracy.
+
+As men and superscalars age, one flaw
+Is true of both: main memory lags behind!
+And should an unexpected query draw
+A blank from cache or frontal lobes, we find
+The distant answer takes too long to seek:
+A hundred cycles, more or less -- too long!
+Our friends and OS dare to call us weak,
+"You would not make us wait if you were strong!"
+
+  And so we form a plan to stop their jests:
+  By guessing we can start the search ahead,
+  And put the latency *before* their tests
+  So they shall be the bottleneck instead!
+  For if we knew the question ere it came,
+  Then we would be no fool in memory's game.
+
+
+P.S. Yes, I really came up with this question idea and this poetic response
+during the two-hour final.  Nothing was borrowed from previous ideas, though
+the villanelle was good practice.  The reference to "men" in the first line
+is not intended to be sexist, but is an attempt to reference mankind in
+general.  It is hard to be both poetic and politically correct at once.  With
+infinite time and cycles, it would probably be possible to write something
+better and less offensive.  Maybe with some classical or Biblical allusions,
+too.

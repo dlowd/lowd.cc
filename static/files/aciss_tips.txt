@@ -1,0 +1,78 @@
+Here are a few brief tips about using ACISS:
+
+1. Use qsub -I to get an interactive session on a worker node.  You
+can do this from multiple connections to get quite a few nodes to work
+with.
+
+2. I've written scripts to make submitting and managing jobs easier
+(at least, for me).  You can find them here:
+
+/home5/lowd/scripts
+
+I particularly recommend dsub, qwait, and qclean.
+
+dsub is for submitting jobs to the cluster instead of using qsub.  It
+generates a script that changes to your current directory and executes
+the command you pass it as an argument.
+
+qwait sleeps until you have fewer than 100 jobs on the queue.  (If you
+have more than 120 or so jobs, the queue will reject additional jobs
+that you try to submit.)
+
+qclean removes all jobs you've submitted to the queue, except for
+interactive sessions (qsub -I).
+
+Example usage:
+
+for ds in `cat datasets.txt`; do
+for i in 0 1 2 3 4 5 6 7 8 9; do
+  for param1 in 0.01 0.02 0.05 0.1 0.2 0.5 1 2 5 10 20 50 100; do
+    for param2 in 1 2 5 10 20; do
+      qwait
+      dsub "./slow_learning_algorithm -w1 $param1 -w2 $param2 -i
+data/${ds}-${i}.train -o models/${ds}-${i}-${param1}-${param2}.model"
+    done
+  done
+done
+done
+
+This nested bash for loop creates a massive number of jobs to submit,
+depending on the dataset (ds), the partition (i), and the learning
+parameters (param1, param2).  qwait waits until there is space to
+submit more jobs.  dsub wraps the command you want to execute in a
+script and submits it to the cluster.
+
+And if you realize that you made a typo and all your jobs are wrong,
+then you just run:
+
+qclean
+
+dsub creates lots of files of the form job.[number] and
+job.[number1].e[number2] and job.[number1].o[number2].  The first file
+is the automatically generated script (which uses process id in an
+attempt to be approximately unique, but conflicts are theoretically
+possible).  The latter two are the errors and output from the job,
+respectively.  I frequently run:
+
+ls -l *.e* | grep -v ' 0 '
+
+To show me all of the error files that aren't empty (size 0).  Then I
+can look at the actual error message or the corresponding job script
+to debug what happened.  Then once everything seems to have run ok:
+
+rm job.*
+
+I hope this is helpful.  The PBS documentation is helpful for
+explaining how to specify details about queues to submit to, maximum
+run times, and other parameters.  I rarely use most of those options.
+
+This is, of course, just my personal usage pattern.  You'll probably
+figure out a more clever and efficient way to use the cluster, but
+maybe this will save you a little time as you get started. (-:
+
+3. Other useful PBS commands: qstat (I use it all the time, although I
+recently created the script dstat to show me just my own jobs and make
+it fit in an 80-character terminal without wrapping), qdel (I use it
+rarely)
+
+Good luck!

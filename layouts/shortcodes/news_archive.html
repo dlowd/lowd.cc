@@ -1,0 +1,23 @@
+{{- $data := site.Data.news -}}
+{{- if and $data $data.items -}}
+<ul class="news-list">
+  {{- range $item := $data.items }}
+  <li>
+    <time datetime="{{ $item.date }}">{{ (time $item.date).Format "Jan 2, 2006" }}</time>
+    <div class="news-body">
+      <div class="news-title">{{ $item.title }}</div>
+      {{- with $item.summary }}<p>{{ . }}</p>{{ end }}
+      {{- with $item.links }}
+      <div class="news-links">
+        {{- range $index, $link := . -}}
+          {{- if $link.url }}<a href="{{ $link.url }}">{{ $link.label | default "Link" }}</a>{{ end }}{{- if lt (add $index 1) (len .) }} · {{ end -}}
+        {{- end -}}
+      </div>
+      {{- end }}
+    </div>
+  </li>
+  {{- end }}
+</ul>
+{{- else -}}
+<p>No news items available.</p>
+{{- end -}}
