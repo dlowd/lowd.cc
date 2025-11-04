@@ -17,8 +17,8 @@ canonifyURLs = false
 [params]
   author = "Daniel Lowd"
   description = "Professor of Computer Science at the University of Oregon"
-  defaultTheme = "auto"
-  disableThemeToggle = false
+  defaultTheme = "light"
+  disableThemeToggle = true
   ShowReadingTime = false
   ShowShareButtons = false
   ShowBreadCrumbs = true

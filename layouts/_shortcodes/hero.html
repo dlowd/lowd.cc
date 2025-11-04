@@ -1,0 +1,22 @@
+<div class="home-hero">
+  <div class="hero-image">
+    <img class="hero-portrait" src="/images/daniel-lowd.jpg" alt="Portrait of Daniel Lowd">
+  </div>
+  <div class="hero-copy">
+    <p>I am a Professor of Computer Science at the University of Oregon. I work on adversarial machine learning, tractable probabilistic modeling, and statistical relational learning.</p>
+
+<p class="quick-links-inline"><a href="/files/lowd-cv.pdf">CV</a> · <a href="/publications/">Publications</a> · <a href="/research/">Research</a></p>
+
+    <p class="contact-inline-text"><strong>Email</strong> <a href="mailto:lowd@uoregon.edu">lowd@uoregon.edu</a> </p>
+
+<p class="contact-inline-text">
+  <strong>Social </strong>
+  {{- with .Site.Params.socialIcons -}}
+    {{- range $i, $s := . -}}
+      {{- if gt $i 0 -}} · {{- end -}}
+      <a href="{{ $s.url }}">{{ $s.name }}</a>
+    {{- end -}}
+  {{- end -}}
+</p>
+  </div>
+</div>
