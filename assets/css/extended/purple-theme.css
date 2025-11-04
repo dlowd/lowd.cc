@@ -29,7 +29,7 @@ a:hover {
 
 header.navbar,
 .header {
-  background: #4b0082;
+  background: #522d80; 
   color: #fff;
   border-bottom: none;
   box-shadow: 0 6px 14px rgba(10, 5, 18, 0.22);
@@ -128,7 +128,7 @@ header.navbar,
 }
 
 .hero-portrait {
-  width: 168px;
+  width: 196px;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(40, 18, 60, 0.12);
   border: 2px solid rgba(84, 34, 110, 0.18);
@@ -332,125 +332,8 @@ header.navbar,
   .news-list li { grid-template-columns: 1fr; gap: 0.6rem; }
 }
 
-@media (prefers-color-scheme: dark) {
-  html:not(.light) body {
-    background: radial-gradient(circle at 15% 10%, rgba(143, 80, 190, 0.22), transparent 55%),
-      radial-gradient(circle at 85% 10%, rgba(90, 33, 123, 0.28), transparent 50%),
-      #121018;
-    color: #F0ECF8;
-  }
-
-  html:not(.light) {
-    --theme: 28, 22, 40;
-    --entry: 35, 27, 50;
-    --primary: 202, 166, 255;
-    --primary-dark: 172, 130, 230;
-    --primary-light: 225, 196, 255;
-    --secondary: 220, 206, 238;
-    --tertiary: 48, 36, 70;
-    --border: 71, 52, 100;
-    --code-bg: 40, 30, 60;
-    --link-color: rgb(var(--primary));
-  }
-
-  html:not(.light) .post-entry,
-  html:not(.light) .entry-single,
-  html:not(.light) .home-info,
-  html:not(.light) .archive-entry {
-    background: #221A33;
-    border: 1px solid rgba(202, 166, 255, 0.28);
-    box-shadow: 0 16px 32px rgba(10, 5, 16, 0.6);
-  }
-
-  html:not(.light) header.navbar,
-  html:not(.light) .header {
-    background: rgba(28, 22, 40, 0.92);
-    border-bottom: 1px solid rgba(202, 166, 255, 0.18);
-  }
-
-  html:not(.light) .home-info .buttons .button {
-    background: rgb(var(--primary));
-    box-shadow: 0 12px 28px rgba(12, 0, 35, 0.5);
-  }
-
-  html:not(.light) .recent-item {
-    background: rgba(35, 27, 50, 0.85);
-    border-left-color: rgba(202, 166, 255, 0.45);
-    box-shadow: 0 14px 28px rgba(10, 5, 16, 0.4);
-  }
-
-  html:not(.light) .home-hero { gap: 1.2rem; }
-
-  html:not(.light) .hero-intro {
-    background: rgba(35, 27, 50, 0.9);
-    border-left-color: rgba(202, 166, 255, 0.45);
-    box-shadow: 0 28px 48px rgba(10, 5, 18, 0.45);
-  }
-
-  html:not(.light) .contact-card {
-    background: linear-gradient(160deg, rgba(46, 26, 70, 0.95), rgba(30, 16, 50, 0.92));
-    border: 1px solid rgba(202, 166, 255, 0.3);
-    box-shadow: 0 24px 50px rgba(10, 5, 18, 0.55);
-  }
-
-  html:not(.light) .contact-list li span:first-child {
-    color: rgb(var(--primary-light));
-  }
-
-  html:not(.light) .contact-list li span:last-child,
-  html:not(.light) .contact-list li a {
-    color: rgba(230, 222, 242, 0.9);
-  }
-
-  html:not(.light) .contact-list li a {
-    border-bottom-color: rgba(202, 166, 255, 0.35);
-  }
-
-  html:not(.light) .contact-list li a:hover {
-    color: rgb(var(--primary));
-    border-bottom-color: rgba(202, 166, 255, 0.55);
-  }
-
-  html:not(.light) .hero-portrait {
-    border-color: rgba(202, 166, 255, 0.4);
-  }
-
-  html:not(.light) .publication-list li,
-  html:not(.light) .news-list li {
-    background: #1D1530;
-    border-left-color: rgba(202, 166, 255, 0.55);
-    box-shadow: 0 18px 30px rgba(10, 5, 18, 0.65);
-  }
-
-  /* Compact variant in dark mode retains minimal style */
-  html:not(.light) .publication-list.compact li {
-    background: transparent;
-    border-left: 0;
-    box-shadow: none;
-  }
-
-  html:not(.light) .pub-title,
-  html:not(.light) .news-title {
-    color: #FAF8FF;
-  }
-
-  html:not(.light) .pub-authors,
-  html:not(.light) .pub-venue,
-  html:not(.light) .news-body p {
-    color: #E8E2F5;
-  }
-
-  html:not(.light) .pub-links a,
-  html:not(.light) .news-links a {
-    color: #E1C4FF;
-  }
-
-  html:not(.light) .home-info .buttons .button:hover {
-    background: rgb(var(--primary-dark));
-  }
-
-  html:not(.light) .post-content blockquote {
-    background: rgba(202, 166, 255, 0.12);
-    border-left-color: rgba(202, 166, 255, 0.4);
-  }
+.hero-portrait {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  border-radius: 4px;
 }
+
